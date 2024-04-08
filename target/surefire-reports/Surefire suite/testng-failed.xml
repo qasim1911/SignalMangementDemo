@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="SignalAutomation.SignalManagementTest.LogOutTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logOutValidation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SignalAutomation.SignalManagementTest.LogOutTest -->
+      <class name="SignalAutomation.SignalManagementTest.ProductTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="deleteProduct" invocation-numbers="0"/>
+          <include name="editProduct" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="addProduct" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SignalAutomation.SignalManagementTest.ProductTest -->
+      <class name="SignalAutomation.SignalManagementTest.LoginPageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="loginValidation" invocation-numbers="0"/>
+          <include name="loginByBlankPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SignalAutomation.SignalManagementTest.LoginPageTest -->
+      <class name="SignalAutomation.SignalManagementTest.ProjectTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="deleteProjectTest" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="editProjectTest" invocation-numbers="0"/>
+          <include name="addProjectTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SignalAutomation.SignalManagementTest.ProjectTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
