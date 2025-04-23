@@ -116,7 +116,7 @@ public class BaseComponent {
 
 	public String takeScreenshot(String testName, WebDriver driver) throws IOException {
 
-		System.out.println("testName" + testName);
+		///System.out.println("testName" + testName);
 		TakesScreenshot tScreenshot = (TakesScreenshot) driver;
 		File src = tScreenshot.getScreenshotAs(OutputType.FILE);
 		String pathString = System.getProperty("user.dir") + "//Report//screenshot//" + testName + ".png";

@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 import org.testng.annotations.Test;
 
+import com.google.common.base.Verify;
+
 import SignalAutomation.BaseComponent.BaseComponent;
 
 public class ActionStateTest extends BaseComponent {
@@ -20,6 +22,6 @@ public class ActionStateTest extends BaseComponent {
 	
 	@Test(dataProvider = "getDataFromJson", priority = 3)
 	public void deleteActionState(HashMap<String, String> input) {
-		
+		//Verify.verify(false, null, 0);
 	}
 }

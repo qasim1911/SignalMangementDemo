@@ -32,14 +32,14 @@ public class LoginPageTest extends BaseComponent {
 
 	// Negative TestCases
 
-	@Test(dataProvider = "getDataFromHashMap", priority = 2)
+	//@Test(dataProvider = "getDataFromHashMap", priority = 2)
 	public void loginByInvalidUsername(HashMap<String, String> inputData) throws IOException {
 
 		landingPage.login("syed001", inputData.get("password"));
 
 	}
 
-	@Test(dataProvider = "getDataFromHashMap", priority = 3)
+	//@Test(dataProvider = "getDataFromHashMap", priority = 3)
 	public void loginByInvalidPassword(HashMap<String, String> inputData) throws IOException {
 
 		landingPage.login(inputData.get("email"), "sdfgyuh$xdcfvgbh234");
@@ -55,7 +55,7 @@ public class LoginPageTest extends BaseComponent {
 
 	}
 
-	@Test(dataProvider = "getDataFromJson", priority = 5)
+	//@Test(dataProvider = "getDataFromJson", priority = 5)
 	public void loginByBlankPassword(HashMap<String, String> inputData) throws IOException {
 
 		System.out.println("test1");

@@ -2,6 +2,7 @@ package SignalAutomation.TestComponents;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Stack;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -110,7 +111,7 @@ public class ProductPage extends AbstractComponents {
 		String productName = inputData.get("productName");
 		// int index = Integer.parseInt(inputData.get("headerLinkIndex"));
 		goToNavigationLink(inputData.get("goToNavigationLink"));
-
+		//productName.split(productName)
 		waitForElementVisible(productList.get(0));
 
 		 WebElement matchedElement = getMatchElementFromList(productList, productName);
@@ -187,6 +188,14 @@ public class ProductPage extends AbstractComponents {
 		Select selectAssignee = new Select(assigneeDropdown);
 		selectAssignee.selectByVisibleText("--Select--");
 		System.out.println("clear end");
+	}
+	
+	public void clearbhjProduct() {
+
+		System.out.println("clear end");
+		
+		Stack<Integer> strIntegers = new Stack<Integer>();
+		strIntegers.add(1);
 	}
 
 }
